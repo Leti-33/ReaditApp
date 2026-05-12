@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - 18Group-webapp
+name: Build and deploy ASP.Net Core app to Azure Web App - 18group-webapp
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C71E7B3A0AFB44E7BF6C5AC175992BBA }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_ECEFC7689717465FA490B3D03A6DD3CD }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DCAA7A5D9937445F85191D1C202F66E9 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A36254458C8E4F12A4429AB30FAFA97A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2092BD4256644B499B46BC278BB96087 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E571194B3F414E08A3CE3A2AEE109BDA }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: '18Group-webapp'
+          app-name: '18group-webapp'
           slot-name: 'Production'
           package: .
           
